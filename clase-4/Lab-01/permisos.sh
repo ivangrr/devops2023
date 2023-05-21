@@ -2,6 +2,6 @@
 
 chmod +x nginx.sh
 chmod +x mysql.sh
-echo "Listando archivos con permisos de ejecución"
+echo "Listando archivos con permisos de ejecución "
 ls -la
 sleep 1
