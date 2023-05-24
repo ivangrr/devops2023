@@ -20,7 +20,7 @@
 
 # 3. Ver capas de la imagén
  ## 3.1. #En el apartado "Layers" pueden contarse cuántas capas hay
-  docker inspect simple-apache:new]
+  docker inspect simple-apache:new
 ![](https://github.com/ivangrr/devops2023/blob/main/assets/5-clase-4-lab-04-img5-3-1-.png)
     
  ## 3.2. #Todas las acciones que son < 0B son capas
