@@ -2,18 +2,18 @@
     git clone https://github.com/roxsross/The-DevOps-Journey-101.git
     y nos posicionamos en la carpeta del challenge correspondiente.
     cd /The-DevOps-Journey-101/CLASE-04/Challenge/04
-    
-    ![ls](https://github.com/ivangrr/devops2023/blob/main/assets/1-clase-4-lab-04-img1-ls-.PNG)
+    ls
+    ![](https://github.com/ivangrr/devops2023/blob/main/assets/1-clase-4-lab-04-img1-ls-.PNG)
     
     
  ## 1.1. Creamos el archivo "Dockerfile"
-    ![Dockerfile](https://github.com/ivangrr/devops2023/blob/main/assets/2-clase-4-lab-04-img2-Dockerfile-.PNG)
+    ![](https://github.com/ivangrr/devops2023/blob/main/assets/2-clase-4-lab-04-img2-Dockerfile-.PNG)
   
     
     
  ## 1.2. Creamos la imagen con el siguiente comando
     docker build . -t simple-apache:new
-    ![docker build](https://github.com/ivangrr/devops2023/blob/main/assets/3-clase-4-lab-04-img3-1-2.png)
+    ![](https://github.com/ivangrr/devops2023/blob/main/assets/3-clase-4-lab-04-img3-1-2.png)
 # 2. Se ejecuta un contenedor con la nueva imagen
     docker run -d --name myapache -p 5050:80 simple-apache:new
 ![](https://github.com/ivangrr/devops2023/blob/main/assets/4-clase-4-lab-04-img4-2-.png)
