@@ -41,7 +41,39 @@ Guardar cambios
 
 ### Frontend:
 
+Procedemos a crear el archivo Dockerfile dentro de la carpeta backend-pokemon-app
+
+```
+cd frontend-pokemon-app
+nano Dockerfile
+```
+Dentro del Dockerfile escribir lo siguiente
+```
+
+
+```
+Guardar cambios 
+
+![](assets/10.png)
+
+
 ## Subir la Imagen del Frontend y Backend al Registry Docker Hub con versionado
 
 ## Docker-compose
+
+```
+version: '3'
+
+services:
+  backend:
+    image: backend_pokemon:1.0.0
+    ports:
+      - 8000:8000
+
+  frontend:
+    image: frontend_pokemon:1.0.0
+    ports:
+      - 3000:3000
+
+```
 
