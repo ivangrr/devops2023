@@ -39,6 +39,14 @@ Guardar cambios
 
 ![](assets/9.png)
 
+Construimos la imagen
+
+```
+docker build -t backend_pokemon:1.0.0 .
+```
+
+![](assets/10.png)
+
 ### Frontend:
 
 Procedemos a crear el archivo Dockerfile dentro de la carpeta backend-pokemon-app
