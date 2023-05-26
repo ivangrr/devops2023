@@ -226,7 +226,7 @@ ejecutar el siguiente comando desde la ubicación de docker-compose.yml
 ```
 docker-compose up -d
 ```
-![](assets/24.png)
+![](assets/25.png)
 
 ![](assets/1.png)
 
