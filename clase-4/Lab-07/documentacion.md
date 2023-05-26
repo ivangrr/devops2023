@@ -193,20 +193,41 @@ docker push henryburgos/frontend_pokemon:1.0.0
 
 ## 3. Docker-compose
 ---
+Ahora procederemos a crear un archivo con nombre docker-compose.yml y lo guardaremos en una carpeta que creamos con el nombre proyecto
+
+```
+mkdir proyecto
+cd proyecto
+nano docker-compose.yml
+```
+Las imagenes a utilizar son las que subimos a Docker Hub procedemos a escribir lo siguiente
 
 ```
 version: '3'
 
 services:
   backend:
-    image: backend_pokemon:1.0.0
+    image: henryburgos/backend_pokemon:1.0.0
     ports:
       - 8000:8000
 
   frontend:
-    image: frontend_pokemon:1.0.0
+    image: henryburgos/frontend_pokemon:1.0.0
     ports:
       - 3000:3000
 
 ```
+![](assets/23.png)
+
+![](assets/24.png)
+
+ejecutar el siguiente comando desde la ubicación de docker-compose.yml
+
+```
+docker-compose up -d
+```
+![](assets/24.png)
+
+![](assets/1.png)
+
 
