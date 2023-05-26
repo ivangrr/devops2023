@@ -133,6 +133,17 @@ Creamos nuestras credenciales en DockerHub y accedemos al portal luego procedemo
 
 ![](assets/d2.png)
 
+Iniciamos con el proceso de subir  backend_pokemon  ingresamos a la carpeta backend-pokemon-app con el comando
+
+```
+cd backend-pokemon-app
+```
+una vez dentro de la carpeta procedemos a loguearnos a Docker Hub
+
+```
+docker login -u usuario_docker_hub
+```
+
 
 
 ## 3. Docker-compose
