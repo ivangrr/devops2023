@@ -51,7 +51,6 @@ Ejecutamos la siguiente comando para levantar un contenedor:
 
 ```
 docker run -d -p 8000:8000 backend_pokemon:1.0.0
-docker ps
 ```
 Para visualizar el contenedor creado:
 
@@ -99,7 +98,27 @@ CMD [ "npm", "start" ]
 ```
 Guardar cambios 
 
-![](assets/10.png)
+![](assets/12.png)
+
+Construimos la imagen
+
+```
+docker build -t frontend_pokemon:1.0.0 .
+```
+
+![](assets/13.png)
+
+Ejecutamos la siguiente comando para levantar un contenedor:
+
+```
+docker run -d -p 3000:3000 frontend_pokemon:1.0.0
+```
+Para visualizar el contenedor creado:
+
+```
+docker ps
+```
+![](assets/14.png)
 
 
 ## Subir la Imagen del Frontend y Backend al Registry Docker Hub con versionado
