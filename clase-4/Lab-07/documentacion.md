@@ -1,7 +1,8 @@
 # Documentación del Lab-07
 ---
 
-##1. Dockerfile Frontend y Backend
+## 1. Dockerfile Frontend y Backend
+---
 
 ### Backend:
 
@@ -123,7 +124,8 @@ docker ps
 
 
 
-##2. Subir la Imagen del Frontend y Backend al Registry Docker Hub con versionado
+## 2. Subir la Imagen del Frontend y Backend al Registry Docker Hub con versionado
+---
 
 Creamos nuestras credenciales en DockerHub y accedemos al portal luego procedemos a crear 2 repositorios con visibilidad pública con nombre backend_pokemon y frontend_pokemon
 
@@ -133,7 +135,8 @@ Creamos nuestras credenciales en DockerHub y accedemos al portal luego procedemo
 
 
 
-##3. Docker-compose
+## 3. Docker-compose
+---
 
 ```
 version: '3'
