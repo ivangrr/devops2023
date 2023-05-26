@@ -47,6 +47,20 @@ docker build -t backend_pokemon:1.0.0 .
 
 ![](assets/10.png)
 
+Ejecutamos la siguiente comando para levantar un contenedor:
+
+```
+docker run -d -p 8000:8000 backend_pokemon:1.0.0
+docker ps
+```
+Para visualizar el contenedor creado:
+
+```
+docker ps
+```
+![](assets/11.png)
+
+
 ### Frontend:
 
 Procedemos a crear el archivo Dockerfile dentro de la carpeta backend-pokemon-app
