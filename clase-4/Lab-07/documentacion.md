@@ -82,6 +82,10 @@ Guardar cambios
 
 ## Subir la Imagen del Frontend y Backend al Registry Docker Hub con versionado
 
+![](assets/d2.png)
+
+![](assets/d1.png)
+
 ## Docker-compose
 
 ```
