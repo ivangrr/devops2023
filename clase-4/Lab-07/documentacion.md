@@ -133,6 +133,8 @@ Creamos nuestras credenciales en DockerHub y accedemos al portal luego procedemo
 
 ![](assets/d2.png)
 
+### Backend:
+
 Iniciamos con el proceso de subir  backend_pokemon  ingresamos a la carpeta backend-pokemon-app con el comando
 
 ```
@@ -159,6 +161,35 @@ docker push henryburgos/backend_pokemon:1.0.0
 ![](assets/17.png)
 
 ![](assets/18.png)
+
+### Frontend:
+
+Iniciamos con el proceso de subir  frontend_pokemon  ingresamos a la carpeta frontend-pokemon-app con el comando
+
+```
+cd frontend-pokemon-app
+```
+una vez dentro de la carpeta procedemos a loguearnos a Docker Hub
+
+```
+docker login -u usuario_docker_hub
+```
+construimos la imagen
+
+```
+docker build -t henryburgos/frontend_pokemon:1.0.0 .
+docker images
+docker tag henryburgos/frontend_pokemon:1.0.0 henryburgos/frontend_pokemon
+docker push henryburgos/frontend_pokemon:1.0.0
+
+```
+![](assets/19.png)
+
+![](assets/20.png)
+
+![](assets/21.png)
+
+![](assets/22.png)
 
 ## 3. Docker-compose
 ---
