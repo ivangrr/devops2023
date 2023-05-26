@@ -143,8 +143,22 @@ una vez dentro de la carpeta procedemos a loguearnos a Docker Hub
 ```
 docker login -u usuario_docker_hub
 ```
+construimos la imagen
 
+```
+docker build -t henryburgos/backend_pokemon:1.0.0 .
+docker images
+docker tag henryburgos/backend_pokemon:1.0.0 henryburgos/backend_pokemon
+docker push henryburgos/backend_pokemon:1.0.0
 
+```
+![](assets/15.png)
+
+![](assets/16.png)
+
+![](assets/17.png)
+
+![](assets/18.png)
 
 ## 3. Docker-compose
 ---
