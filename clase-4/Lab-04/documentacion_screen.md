@@ -27,8 +27,8 @@
     docker history simple-apache:new
 ![](https://github.com/ivangrr/devops2023/blob/main/assets/6-clase-4-lab-04-img6-3-2-.png)
     
-    docker image inspect simple-nginx -f '{{.RootFS.Layers}}'
+    docker image simple-apache:new -f '{{.RootFS.Layers}}'
 ![](https://github.com/ivangrr/devops2023/blob/main/assets/7-clase-4-lab-04-img2-3-2-2-.png)
+    
     Vista del Sitio Web
-![VISTA DE SITIO WEB](https://github.com/ivangrr/devops2023/blob/main/assets/8-clase-4-lab-04-img2-preview-web-.png)
-
+    ![VISTA DE SITIO WEB](https://github.com/ivangrr/devops2023/blob/main/assets/8-clase-4-lab-04-img2-preview-web-.png)
