@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile-app
+    container_name: service-flask-app
+    ports:
+      - "8000:8000"
+    networks:
+      - first_network
+      
+  consumer:
+    build: 
+      context: .
+      dockerfile: dockerfile-consumer
+    container_name: consumer
+    ports:
+      - "8001:8001"
+    depends_on:
+      - app
+    networks:
+      - first_network
+
+networks:
+  first_network:
+    driver: bridge

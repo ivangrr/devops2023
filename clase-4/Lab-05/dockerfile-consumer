@@ -1,0 +1,26 @@
+# Tomado desde https://hub.docker.com/r/library/python/tags/
+FROM python:slim-buster
+
+# Crear archivo src/consumer en /usr
+RUN mkdir /usr/src/consumer/
+
+# Copiar src/consumer al contenedor
+COPY src/consumer /usr/src/consumer
+
+# Variables de entorno
+ENV LOCAL=true
+ENV PYTHONUNBUFFERED=1
+
+# Configurar el workdir
+WORKDIR /usr/src/consumer
+
+# Instalar requests
+RUN pip install requests
+
+# Exponer el puerto 8001
+EXPOSE 8001
+
+# Comandos a llamar
+CMD ["python", "consumer.py"]
+
+
