@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  web-server:
+    build:
+      context: ./
+    container_name: web-server
+    restart: always
+    ports:
+      - "80:80"
+
+  db:
+    image: mariadb:10.4
+    restart: always
+    container_name: db
+    environment:
+      MARIADB_DATABASE: ecomdb
+      MARIADB_USER: ecomuser
+      MARIADB_PASSWORD: ecompassword
+      MARIADB_ALLOW_EMPTY_PASSWORD: "true"
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: "true"
+    volumes:
+      - mariadb-data:/var/lib/mysql
+      - ./db-data-init:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+
+volumes:
+  mariadb-data:
