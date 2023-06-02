@@ -20,7 +20,7 @@ WORKDIR /var/www/html/
 RUN git clone https://github.com/roxsross/The-DevOps-Journey-101.git
 RUN cp -r The-DevOps-Journey-101/CLASE-02/lamp-app-ecommerce/* .
 
-RUN sed -i 's/172.20.1.101/localhost/g' index.php
+RUN sed -i 's/172.20.1.101/db/g' index.php
 
 RUN rm -r The-DevOps-Journey-101
 
